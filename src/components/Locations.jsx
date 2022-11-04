@@ -38,9 +38,9 @@ const Locations = () => {
                 </ul>
             </div>
             <div>
-            <h2>Residents</h2>
+                <h2>Residents</h2>
                 <ul className='residents-list'>
-                    
+
                     {
                         location.residents?.map((resident) =>
                         (
