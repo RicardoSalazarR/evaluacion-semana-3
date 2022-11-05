@@ -21,23 +21,25 @@ const Locations = () => {
 
     return (
         <div className='main-container'>
-            <div>
+            <div className='search-container'>
                 <input
+                    className='search'
                     type="text"
                     value={locationId}
                     onChange={(e) => setLocationId(e.target.value)} />
 
-                <button onClick={searchLocation}>Search</button>
+                <button onClick={searchLocation} className='search'>Search</button>
             </div>
-            <div>
-                <h1>{location.name}</h1>
+
+            <div className='description-card'>
                 <ul className='description'>
+                    <li><b>Name: </b>{location.name}</li>
                     <li><b>Type: </b>{location.type}</li>
                     <li><b>Dimensión: </b>{location.dimension}</li>
                     <li><b>Population: </b>{location.residents?.length}</li>
                 </ul>
             </div>
-            <div>
+            <div className='residents-section'>
                 <h2>Residents</h2>
                 <ul className='residents-list'>
 
