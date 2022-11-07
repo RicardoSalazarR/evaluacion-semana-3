@@ -23,12 +23,12 @@ const Locations = () => {
         <div className='main-container'>
             <div className='search-container'>
                 <input
-                    className='search'
+                    className='search search-input'
                     type="text"
-                    value={locationId}
+                    value={locationId} placeholder="    TYPE LOCATION ID"
                     onChange={(e) => setLocationId(e.target.value)} />
 
-                <button onClick={searchLocation} className='search'>Search</button>
+                <button onClick={searchLocation} className='search search-button'>Search</button>
             </div>
 
             <div className='description-card'>
