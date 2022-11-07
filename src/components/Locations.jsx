@@ -40,7 +40,7 @@ const Locations = () => {
                 </ul>
             </div>
             <div className='residents-section'>
-                <h2>Residents</h2>
+                <h2 className='residents-title'>Residents</h2>
                 <ul className='residents-list'>
 
                     {
