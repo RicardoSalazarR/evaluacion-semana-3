@@ -10,9 +10,17 @@ body{
   font-family: 'Roboto', sans-serif;
   background-color: rgb(244, 244, 244);
 }
-.main-container{
-
-
+.circle{
+  background-color: red;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 .residents-section{
   padding: 1rem 0;
